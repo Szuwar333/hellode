@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "hellode"
+dynamic = ["version"]
+description = "Test packages"
+authors = [
+    {name = "Michal", email = "michalw.mail@gmail.com"}
+]
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = [
+    "flake8>=5.0.4",
+]
+
+[tool.setuptools.packages.find]
+where = ["src/"]
+
