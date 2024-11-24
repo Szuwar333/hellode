@@ -17,7 +17,7 @@ license = {text = "MIT"}
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
-[tool.pdm.dev-dependencies]
+[tool.setuptools.packages.find]
 dev = [
     "flake8>=5.0.4",
 ]
